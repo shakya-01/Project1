@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background: url(photo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.btn_one ion-icon {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.sideBar {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.2s linear;
+}
+
+.sideBar .logo {
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  height: 60px;
+}
+
+.sideBar .logo a {
+  position: absolute;
+  left: 70px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sideBar .btn_two ion-icon {
+  color: grey;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 15px;
+  left: 255px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.sideBar .menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  transition: all 0.2s linear;
+}
+
+.sideBar .menu li {
+  margin-top: 5px;
+  padding: 10px 20px;
+}
+
+.sideBar .menu ion-icon,
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sideBar .menu ion-icon {
+  padding-right: 8px;
+}
+
+.sideBar .social_Media {
+  position: absolute;
+  left: 25%;
+  bottom: 40px;
+}
+
+.sideBar .social_Media ion-icon {
+  color: #fff;
+  opacity: 0.5;
+  padding: 0 5px;
+}
+
+#check {
+  display: none;
+}
+
+.sideBar .menu li:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one ion-icon:hover {
+  font-size: 40px;
+}
+
+.btn_two ion-icon:hover {
+  font-size: 35px;
+}
+
+.sideBar .social_Media ion-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#check:checked ~ .sideBar {
+  left: 0;
+}
+
+#check:checked ~ .btn_one ion-icon {
+  opacity: 0;
+}
+
+#check:checked ~ .sideBar .btn_one ion-icon {
+  opacity: 1;
+}
